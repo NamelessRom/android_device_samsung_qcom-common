@@ -569,7 +569,10 @@ esac
 # Post-setup services
 case "$target" in
     "msm8660" | "msm8960" | "msm8226" | "msm8610")
+        # Disable mpdecision, you need to start mpdecision in your
+        # device' ramdisk if you need mpdecision
         start mpdecision
+        stop mpdecision
     ;;
     "msm8974")
         start mpdecision
