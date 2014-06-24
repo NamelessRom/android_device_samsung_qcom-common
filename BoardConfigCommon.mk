@@ -34,8 +34,8 @@ TARGET_QCOM_AUDIO_VARIANT := caf
 TARGET_QCOM_DISPLAY_VARIANT := caf
 BOARD_USES_LEGACY_ALSA_AUDIO := true
 
-# Use CM PowerHAL by default
-TARGET_POWERHAL_VARIANT := cm
+# Use QCOM PowerHAL by default
+WITH_QC_PERF := true
 
 # Graphics
 USE_OPENGL_RENDERER := true
